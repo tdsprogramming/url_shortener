@@ -14,6 +14,8 @@ class UrlDetailView(DetailView):
     model=Url
     slug_url_kwarg='shortened_url_ending'
     slug_field='shortened_url_ending'
+    template_name='detail.html'
+    context_object_name='url'
 
 def redirect_view(request, shortened_url_ending):
     url_redirect_to = "https://" + Url.objects.get(shortened_url_ending=shortened_url_ending).url_redirect_to
