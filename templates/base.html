@@ -3,11 +3,22 @@
    <head>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <style type="text/css">
+         html, body{
+            height:100%;
+            background-color:rgb(50,50,50);
+         }
+         .box-wrapper{
+            padding: 5rem;
+            border:5px solid rgb(238,210,0);
+            /*border-radius: 5px;*/
+            /*background-color:rgb(100,100,100);*/
+            /*box-shadow: 10px 10px 5px rgba(238,210,2,.5);*/
+         }
+      </style>
    </head>
    <body>
-      {% block base_content %}
-
-      {% endblock base_content %}
+      {% block base_content %}{% endblock base_content %}
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    </body>
