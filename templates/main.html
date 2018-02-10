@@ -2,17 +2,20 @@
 {% load crispy_forms_tags %}
 {% block base_content %}
 <div class="container" style="height:100%;">
-   <div class="row justify-content-center align-items-center" style="height:100%;">
-      <div clas
+   <div class = "row justify-content-center align-items-center" style = "height:50%;">
       <div class="display-2">
          Url Shortener
       </div>
-      <form method="POST" id="url-form">{% csrf_token %}
-         <div class="form-group">
-            {{form|crispy}}
-         </div>
-         <input type="submit" value="Create" class="btn btn-md btn-success"/>
-      </form>
+   </div>
+   <div class="row justify-content-center align-items-center" style="height:10%;">
+      <div class = "col-md-4">
+         <form method="POST" id="url-form">{% csrf_token %}
+            <div class="form-group">
+               {{form|crispy}}
+            </div>
+            <input type="submit" value="Create" class="btn btn-md btn-success"/>
+         </form>
+      </div>
    </div>
 </div>
 {% endblock base_content %}
